@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Valentina Russo</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-    <!-- Meta tag Open Graph per anteprime Social -->
     <meta property="og:title" content="Contatti — Valentina Russo">
     <meta property="og:description" content="Mettiti in contatto con Valentina Russo per collaborazioni, consulenze e progetti di marketing e comunicazione.">
     <meta property="og:image" content="assets/img/valentina-russo.jpg">
@@ -20,34 +18,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <style>
-        /* Stile base identico per TUTTI i pulsanti all'apertura */
-        .service-btn {
-            border: 1px solid #7a5c4d !important;
-            color: #28231f !important;
-            background-color: #ffffff !important;
-            transition: all 0.2s ease-in-out;
-            cursor: pointer;
-        }
-
-        /* Animazione hover al passaggio del mouse per tutti */
-        .service-btn:hover {
-            background-color: #e8d4cc !important;
-            color: #28231f !important;
-            transform: translateY(-1px);
-        }
-
-        /* Stato selezionato/schiacciato al click */
-        .service-btn.is-selected {
-            background-color: #4a382e !important;
-            color: #ffffff !important;
-            border-color: #4a382e !important;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
-            transform: translateY(1px);
-        }
-    </style>
-
-    <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -104,7 +74,6 @@
                     </div>
 
                     <div class="d-flex flex-column gap-4">
-                        <!-- Email protetta da antispam -->
                         <div class="p-4 bg-cream rounded-4 border">
                             <span class="text-accent small fw-bold text-uppercase tracking-wider">Email</span>
                             <div class="d-flex justify-content-between align-items-center mt-1">
@@ -116,7 +85,6 @@
                             <span class="text-muted small d-block mt-1">Email personale</span>
                         </div>
 
-                        <!-- Profili social con GitHub -->
                         <div class="p-4 bg-cream rounded-4 border">
                             <span class="text-accent small fw-bold text-uppercase tracking-wider">Profili social</span>
                             <div class="d-flex flex-column gap-2 mt-2">
@@ -135,7 +103,6 @@
                             </div>
                         </div>
 
-                        <!-- Telefono protetto da antispam -->
                         <div class="p-4 bg-cream rounded-4 border">
                             <span class="text-accent small fw-bold text-uppercase tracking-wider">Telefono</span>
                             <div class="d-flex justify-content-between align-items-center mt-1">
@@ -147,7 +114,6 @@
                             <span class="text-muted small d-block mt-1">Telefono personale</span>
                         </div>
 
-                        <!-- Email accademica protetta -->
                         <div class="p-4 bg-cream rounded-4 border">
                             <span class="text-accent small fw-bold text-uppercase tracking-wider">Email accademica</span>
                             <div class="d-flex justify-content-between align-items-center mt-1">
@@ -165,10 +131,9 @@
                     <div class="p-4 p-md-5 bg-cream rounded-4 border shadow-sm">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <h3 class="font-serif fw-bold text-dark-custom h4 mb-0">Parliamo del tuo progetto</h3>
-                            <span class="text-muted small">* campi obbligatori</span>
+                            <span class="text-muted small">campi obbligatori</span>
                         </div>
 
-                        <!-- Form collegato a EmailJS -->
                         <form id="contact-form">
                             <div class="row g-3 mb-3">
                                 <div class="col-md-6">
@@ -190,7 +155,6 @@
                                 <label class="form-label small fw-bold text-brown d-block mb-2">Di cosa hai bisogno?</label>
                                 <div class="d-flex flex-wrap gap-2">
                                     <input type="hidden" name="service_type" id="serviceTypeInput" value="">
-                                    <!-- Tutti i pulsanti sono IDENTICI all'apertura -->
                                     <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="Strategia">Strategia</button>
                                     <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="Social media">Social media</button>
                                     <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="UX/UI">UX/UI</button>
@@ -225,7 +189,7 @@
         </div>
     </section>
 
-    <section class="py-5" style="background-color: #e8d4cc; color: #28231f;">
+    <section class="py-5 bg-terracotta-soft text-dark-custom">
         <div class="container py-2">
             <div class="row align-items-center justify-content-between g-3">
                 <div class="col-lg-8">
@@ -270,19 +234,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Script gestione selezione e EmailJS -->
     <script>
         const serviceButtons = document.querySelectorAll('.service-btn');
         const serviceInput = document.getElementById('serviceTypeInput');
 
         serviceButtons.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Se clicchi su un pulsante già selezionato, lo deseleziona
                 if (btn.classList.contains('is-selected')) {
                     btn.classList.remove('is-selected');
                     serviceInput.value = '';
                 } else {
-                    // Altrimenti deseleziona tutti e seleziona quello cliccato
                     serviceButtons.forEach(b => b.classList.remove('is-selected'));
                     btn.classList.add('is-selected');
                     serviceInput.value = btn.getAttribute('data-value');
@@ -290,7 +251,6 @@
             });
         });
 
-        // Invio form con EmailJS
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const submitBtn = document.getElementById('submit-btn');

@@ -1,0 +1,64 @@
+@use 'variables' as *;
+
+body {
+    background-color: $bg-main;
+    font-family: 'Poppins', sans-serif;
+    color: $text-dark;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-dark-custom {
+    color: $text-dark;
+}
+
+.text-brown {
+    color: $text-brown;
+}
+
+.text-accent {
+    color: $accent-color;
+}
+
+.bg-cream {
+    background-color: $bg-cream !important;
+}
+
+.bg-dark-brown {
+    background-color: $dark-brown !important;
+}
+
+.bg-terracotta-soft {
+    background-color: $terracotta-soft !important;
+}
+
+.text-light-muted {
+    color: $light-muted;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.eyebrow-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: $accent-color;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 25px;
+        height: 1px;
+        background-color: $accent-color;
+    }
+}

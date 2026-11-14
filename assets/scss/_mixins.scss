@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+@mixin button-variant($bg, $color, $hover-bg) {
+    background-color: $bg;
+    color: $color;
+    border: none;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $hover-bg;
+        color: $color;
+    }
+}
+
+@mixin status-dot($size, $color) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
