@@ -21,7 +21,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("TUO_PUBLIC_KEY");
+            emailjs.init("m8RTkmt5Aq2yDj05a");
         })();
     </script>
 </head>
@@ -153,14 +153,24 @@
 
                             <div class="mb-4">
                                 <label class="form-label small fw-bold text-brown d-block mb-2">Di cosa hai bisogno?</label>
-                                <div class="d-flex flex-wrap gap-2">
-                                    <input type="hidden" name="service_type" id="serviceTypeInput" value="">
-                                    <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="Strategia">Strategia</button>
-                                    <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="Social media">Social media</button>
-                                    <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="UX/UI">UX/UI</button>
-                                    <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="Copywriting">Copywriting</button>
-                                    <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="Funnel / growth">Funnel / growth</button>
-                                    <button type="button" class="service-btn btn btn-sm rounded-pill px-3 py-2" data-value="Altro">Altro</button>
+                                <div class="d-flex flex-wrap gap-2 service-pills-group">
+                                    <input type="radio" class="service-radio" name="service_type" id="service-strategia" value="Strategia">
+                                    <label class="service-pill" for="service-strategia">Strategia</label>
+
+                                    <input type="radio" class="service-radio" name="service_type" id="service-social" value="Social media">
+                                    <label class="service-pill" for="service-social">Social media</label>
+
+                                    <input type="radio" class="service-radio" name="service_type" id="service-uxui" value="UX/UI">
+                                    <label class="service-pill" for="service-uxui">UX/UI</label>
+
+                                    <input type="radio" class="service-radio" name="service_type" id="service-copywriting" value="Copywriting">
+                                    <label class="service-pill" for="service-copywriting">Copywriting</label>
+
+                                    <input type="radio" class="service-radio" name="service_type" id="service-funnel" value="Funnel / growth">
+                                    <label class="service-pill" for="service-funnel">Funnel / growth</label>
+
+                                    <input type="radio" class="service-radio" name="service_type" id="service-altro" value="Altro">
+                                    <label class="service-pill" for="service-altro">Altro</label>
                                 </div>
                             </div>
 
@@ -235,22 +245,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        const serviceButtons = document.querySelectorAll('.service-btn');
-        const serviceInput = document.getElementById('serviceTypeInput');
-
-        serviceButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                if (btn.classList.contains('is-selected')) {
-                    btn.classList.remove('is-selected');
-                    serviceInput.value = '';
-                } else {
-                    serviceButtons.forEach(b => b.classList.remove('is-selected'));
-                    btn.classList.add('is-selected');
-                    serviceInput.value = btn.getAttribute('data-value');
-                }
-            });
-        });
-
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const submitBtn = document.getElementById('submit-btn');
@@ -259,14 +253,13 @@
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'Invio in corso... <i class="fas fa-spinner fa-spin ms-2"></i>';
 
-            emailjs.sendForm('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', this)
+            emailjs.sendForm('service_q63xbib', 'template_k7waw7r', this)
                 .then(function() {
                     formStatus.textContent = 'Messaggio inviato con successo! Ti risponderò presto.';
                     formStatus.className = 'text-success small fw-medium';
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = 'Invia il messaggio <i class="fas fa-arrow-right ms-2"></i>';
                     document.getElementById('contact-form').reset();
-                    serviceButtons.forEach(b => b.classList.remove('is-selected'));
                 }, function(error) {
                     formStatus.textContent = 'Errore durante l\'invio. Riprova più tardi o scrivi direttamente via email.';
                     formStatus.className = 'text-danger small fw-medium';

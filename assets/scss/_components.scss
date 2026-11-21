@@ -121,25 +121,37 @@
     }
 }
 
-.service-btn {
-    border: 1px solid #7a5c4d !important;
-    color: $text-dark !important;
-    background-color: #ffffff !important;
+.service-radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+
+    &:checked + .service-pill {
+        background-color: $text-brown;
+        color: #ffffff;
+        border-color: $text-brown;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+        transform: translateY(1px);
+    }
+}
+
+.service-pill {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 50rem;
+    border: 1px solid #7a5c4d;
+    color: $text-dark;
+    background-color: #ffffff;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    user-select: none;
 
     &:hover {
-        background-color: $terracotta-soft !important;
-        color: $text-dark !important;
+        background-color: $terracotta-soft;
+        color: $text-dark;
         transform: translateY(-1px);
-    }
-
-    &.is-selected {
-        background-color: $text-brown !important;
-        color: #ffffff !important;
-        border-color: $text-brown !important;
-        box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
-        transform: translateY(1px);
     }
 }
 
