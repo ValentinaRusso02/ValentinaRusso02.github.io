@@ -1,9 +1,9 @@
 @use 'variables' as *;
 
-@mixin button-variant($bg, $color, $hover-bg) {
+@mixin button-variant($bg, $color, $hover-bg, $border: none) {
     background-color: $bg;
     color: $color;
-    border: none;
+    border: $border;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
 

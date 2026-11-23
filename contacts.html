@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — Valentina Russo</title>
+    <title>Contatti — Valentina Russo</title>
+    <meta name="description" content="Mettiti in contatto con Valentina Russo per collaborazioni, consulenze e progetti di marketing, comunicazione e design.">
     
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
     <meta property="og:title" content="Contatti — Valentina Russo">
     <meta property="og:description" content="Mettiti in contatto con Valentina Russo per collaborazioni, consulenze e progetti di marketing e comunicazione.">
-    <meta property="og:image" content="assets/img/valentina-russo.jpg">
+    <meta property="og:url" content="https://valentinarusso02.github.io/contacts.html">
+    <meta property="og:image" content="https://valentinarusso02.github.io/assets/img/valentina-russo.jpg">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="it_IT">
 
@@ -18,8 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
         (function() {
             emailjs.init("m8RTkmt5Aq2yDj05a");
         })();
@@ -32,15 +34,16 @@
             <a class="navbar-brand fw-bold font-serif d-flex align-items-center gap-2 text-dark-custom" href="index.html">
                 <span class="brand-badge-circle">VR</span> Valentina Russo
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Apri o chiudi il menu di navigazione">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center gap-4">
                     <li class="nav-item"><a class="nav-link custom-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link custom-link" href="portfolio/index.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link custom-link" href="about/index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link custom-link active" href="contacts.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="about.html">Chi sono</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link active" aria-current="page" href="contacts.html">Contatti</a></li>
                 </ul>
             </div>
         </div>
@@ -64,169 +67,172 @@
         </div>
     </header>
 
-    <section class="section-padding">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <div class="mb-5">
-                        <h3 class="font-serif fw-bold text-dark-custom mb-3">Raccontami cosa stai costruendo.</h3>
-                        <p class="text-muted small">Condividi il contesto, il punto in cui ti trovi e la direzione che vorresti esplorare. Ti risponderò con cura per capire se possiamo lavorare bene insieme.</p>
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="mb-5">
+                            <h2 class="h3 font-serif fw-bold text-dark-custom mb-3">Raccontami cosa stai costruendo.</h2>
+                            <p class="text-muted small">Condividi il contesto, il punto in cui ti trovi e la direzione che vorresti esplorare. Ti risponderò con cura per capire se possiamo lavorare bene insieme.</p>
+                        </div>
+
+                        <div class="d-flex flex-column gap-4">
+                            <div class="p-4 bg-cream rounded-4 border">
+                                <span class="text-accent small fw-bold text-uppercase">Email</span>
+                                <div class="d-flex justify-content-between align-items-center mt-1">
+                                    <a href="mailto:valerusso02@yahoo.it" class="text-dark-custom fw-medium text-decoration-none">
+                                        v&#97;&#108;&#101;&#114;&#117;&#115;&#115;&#111;&#48;&#50;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#105;&#116;
+                                    </a>
+                                    <i class="fas fa-envelope text-muted"></i>
+                                </div>
+                                <span class="text-muted small d-block mt-1">Email personale</span>
+                            </div>
+
+                            <div class="p-4 bg-cream rounded-4 border">
+                                <span class="text-accent small fw-bold text-uppercase">Profili social</span>
+                                <div class="d-flex flex-column gap-2 mt-2">
+                                    <a href="https://github.com/ValentinaRusso02" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
+                                        <i class="fab fa-github text-accent"></i> GitHub <i class="fas fa-arrow-right ms-auto small text-muted"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/valentina-russo-7406b3371" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
+                                        <i class="fab fa-linkedin text-accent"></i> LinkedIn <i class="fas fa-arrow-right ms-auto small text-muted"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/valentina_russ0/" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
+                                        <i class="fab fa-instagram text-accent"></i> Instagram <i class="fas fa-arrow-right ms-auto small text-muted"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/vale.russo.503/" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
+                                        <i class="fab fa-facebook text-accent"></i> Facebook <i class="fas fa-arrow-right ms-auto small text-muted"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-cream rounded-4 border">
+                                <span class="text-accent small fw-bold text-uppercase">Telefono</span>
+                                <div class="d-flex justify-content-between align-items-center mt-1">
+                                    <a href="tel:3271505050" class="text-dark-custom fw-medium text-decoration-none">
+                                        327&#49;&#53;&#48;&#53;&#48;&#53;&#48;
+                                    </a>
+                                    <i class="fas fa-phone text-muted"></i>
+                                </div>
+                                <span class="text-muted small d-block mt-1">Telefono personale</span>
+                            </div>
+
+                            <div class="p-4 bg-cream rounded-4 border">
+                                <span class="text-accent small fw-bold text-uppercase">Email accademica</span>
+                                <div class="d-flex justify-content-between align-items-center mt-1">
+                                    <a href="mailto:v.russo11@studenti.unimarconi.it" class="text-dark-custom fw-medium text-decoration-none small">
+                                        v&#46;&#114;&#117;&#115;&#115;&#111;&#49;&#49;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#105;&#46;&#117;&#110;&#105;&#109;&#97;&#114;&#99;&#111;&#110;&#105;&#46;&#105;&#116;
+                                    </a>
+                                    <i class="fas fa-graduation-cap text-muted"></i>
+                                </div>
+                                <span class="text-muted small d-block mt-1">Contatto accademico</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="d-flex flex-column gap-4">
-                        <div class="p-4 bg-cream rounded-4 border">
-                            <span class="text-accent small fw-bold text-uppercase tracking-wider">Email</span>
-                            <div class="d-flex justify-content-between align-items-center mt-1">
-                                <a href="mailto:valerusso02@yahoo.it" class="text-dark-custom fw-medium text-decoration-none">
-                                    v&#97;&#108;&#101;&#114;&#117;&#115;&#115;&#111;&#48;&#50;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#105;&#116;
-                                </a>
-                                <i class="fas fa-envelope text-muted"></i>
+                    <div class="col-lg-7">
+                        <div class="p-4 p-md-5 bg-cream rounded-4 border shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h2 class="font-serif fw-bold text-dark-custom h4 mb-0">Parliamo del tuo progetto</h2>
+                                <span class="text-muted small">* campi obbligatori</span>
                             </div>
-                            <span class="text-muted small d-block mt-1">Email personale</span>
-                        </div>
 
-                        <div class="p-4 bg-cream rounded-4 border">
-                            <span class="text-accent small fw-bold text-uppercase tracking-wider">Profili social</span>
-                            <div class="d-flex flex-column gap-2 mt-2">
-                                <a href="https://github.com/ValentinaRusso02" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
-                                    <i class="fab fa-github text-accent"></i> GitHub <i class="fas fa-arrow-right ms-auto small text-muted"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/valentina-russo-7406b3371" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
-                                    <i class="fab fa-linkedin text-accent"></i> LinkedIn <i class="fas fa-arrow-right ms-auto small text-muted"></i>
-                                </a>
-                                <a href="https://www.instagram.com/valentina_russ0/" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
-                                    <i class="fab fa-instagram text-accent"></i> Instagram <i class="fas fa-arrow-right ms-auto small text-muted"></i>
-                                </a>
-                                <a href="https://www.facebook.com/vale.russo.503/" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-dark-custom text-decoration-none p-2 rounded-3 bg-white shadow-sm">
-                                    <i class="fab fa-facebook text-accent"></i> Facebook <i class="fas fa-arrow-right ms-auto small text-muted"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="p-4 bg-cream rounded-4 border">
-                            <span class="text-accent small fw-bold text-uppercase tracking-wider">Telefono</span>
-                            <div class="d-flex justify-content-between align-items-center mt-1">
-                                <a href="tel:3271505050" class="text-dark-custom fw-medium text-decoration-none">
-                                    327&#49;&#53;&#48;&#53;&#48;&#53;&#48;
-                                </a>
-                                <i class="fas fa-phone text-muted"></i>
-                            </div>
-                            <span class="text-muted small d-block mt-1">Telefono personale</span>
-                        </div>
-
-                        <div class="p-4 bg-cream rounded-4 border">
-                            <span class="text-accent small fw-bold text-uppercase tracking-wider">Email accademica</span>
-                            <div class="d-flex justify-content-between align-items-center mt-1">
-                                <a href="mailto:v.russo11@studenti.unimarconi.it" class="text-dark-custom fw-medium text-decoration-none small">
-                                    v&#46;&#114;&#117;&#115;&#115;&#111;&#49;&#49;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#105;&#46;&#117;&#110;&#105;&#109;&#97;&#114;&#99;&#111;&#110;&#105;&#46;&#105;&#116;
-                                </a>
-                                <i class="fas fa-graduation-cap text-muted"></i>
-                            </div>
-                            <span class="text-muted small d-block mt-1">Contatto accademico</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <div class="p-4 p-md-5 bg-cream rounded-4 border shadow-sm">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <h3 class="font-serif fw-bold text-dark-custom h4 mb-0">Parliamo del tuo progetto</h3>
-                            <span class="text-muted small">campi obbligatori</span>
-                        </div>
-
-                        <form id="contact-form">
-                            <div class="row g-3 mb-3">
-                                <div class="col-md-6">
-                                    <label class="form-label small fw-bold text-brown">Nome *</label>
-                                    <input type="text" name="from_name" class="form-control bg-white py-3 border-0 shadow-sm" placeholder="Come ti chiami?" required>
+                            <form id="contact-form">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="fromName" class="form-label small fw-bold text-brown">Nome *</label>
+                                        <input type="text" id="fromName" name="from_name" class="form-control bg-white py-3 border-0 shadow-sm" placeholder="Come ti chiami?" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="fromEmail" class="form-label small fw-bold text-brown">Email *</label>
+                                        <input type="email" id="fromEmail" name="from_email" class="form-control bg-white py-3 border-0 shadow-sm" placeholder="La tua email" required>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small fw-bold text-brown">Email *</label>
-                                    <input type="email" name="from_email" class="form-control bg-white py-3 border-0 shadow-sm" placeholder="La tua email" required>
+
+                                <div class="mb-3">
+                                    <label for="companyName" class="form-label small fw-bold text-brown">Azienda / progetto</label>
+                                    <input type="text" id="companyName" name="company" class="form-control bg-white py-3 border-0 shadow-sm" placeholder="Nome dell’azienda o del progetto">
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label small fw-bold text-brown">Azienda / progetto</label>
-                                <input type="text" name="company" class="form-control bg-white py-3 border-0 shadow-sm" placeholder="Nome dell’azienda o del progetto">
-                            </div>
+                                <div class="mb-4">
+                                    <span id="serviceGroupLabel" class="form-label small fw-bold text-brown d-block mb-2">Di cosa hai bisogno?</span>
+                                    <div class="d-flex flex-wrap gap-2 service-pills-group" role="group" aria-labelledby="serviceGroupLabel">
+                                        <input type="radio" class="service-radio" name="service_type" id="service-strategia" value="Strategia">
+                                        <label class="service-pill" for="service-strategia">Strategia</label>
 
-                            <div class="mb-4">
-                                <label class="form-label small fw-bold text-brown d-block mb-2">Di cosa hai bisogno?</label>
-                                <div class="d-flex flex-wrap gap-2 service-pills-group">
-                                    <input type="radio" class="service-radio" name="service_type" id="service-strategia" value="Strategia">
-                                    <label class="service-pill" for="service-strategia">Strategia</label>
+                                        <input type="radio" class="service-radio" name="service_type" id="service-social" value="Social media">
+                                        <label class="service-pill" for="service-social">Social media</label>
 
-                                    <input type="radio" class="service-radio" name="service_type" id="service-social" value="Social media">
-                                    <label class="service-pill" for="service-social">Social media</label>
+                                        <input type="radio" class="service-radio" name="service_type" id="service-uxui" value="UX/UI">
+                                        <label class="service-pill" for="service-uxui">UX/UI</label>
 
-                                    <input type="radio" class="service-radio" name="service_type" id="service-uxui" value="UX/UI">
-                                    <label class="service-pill" for="service-uxui">UX/UI</label>
+                                        <input type="radio" class="service-radio" name="service_type" id="service-copywriting" value="Copywriting">
+                                        <label class="service-pill" for="service-copywriting">Copywriting</label>
 
-                                    <input type="radio" class="service-radio" name="service_type" id="service-copywriting" value="Copywriting">
-                                    <label class="service-pill" for="service-copywriting">Copywriting</label>
+                                        <input type="radio" class="service-radio" name="service_type" id="service-funnel" value="Funnel / growth">
+                                        <label class="service-pill" for="service-funnel">Funnel / growth</label>
 
-                                    <input type="radio" class="service-radio" name="service_type" id="service-funnel" value="Funnel / growth">
-                                    <label class="service-pill" for="service-funnel">Funnel / growth</label>
-
-                                    <input type="radio" class="service-radio" name="service_type" id="service-altro" value="Altro">
-                                    <label class="service-pill" for="service-altro">Altro</label>
+                                        <input type="radio" class="service-radio" name="service_type" id="service-altro" value="Altro">
+                                        <label class="service-pill" for="service-altro">Altro</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-4">
-                                <label class="form-label small fw-bold text-brown">Messaggio *</label>
-                                <textarea name="message" class="form-control bg-white border-0 shadow-sm" rows="5" placeholder="Raccontami il contesto, gli obiettivi e le tempistiche che hai in mente…" required></textarea>
-                            </div>
+                                <div class="mb-4">
+                                    <label for="messageText" class="form-label small fw-bold text-brown">Messaggio *</label>
+                                    <textarea id="messageText" name="message" class="form-control bg-white border-0 shadow-sm" rows="5" placeholder="Raccontami il contesto, gli obiettivi e le tempistiche che hai in mente…" required></textarea>
+                                </div>
 
-                            <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" id="privacyCheck" required>
-                                <label class="form-check-label text-muted small" for="privacyCheck">
-                                    Acconsento al trattamento dei dati per ricevere una risposta alla mia richiesta.
-                                </label>
-                            </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <label class="form-check-label text-muted small" for="privacyCheck">
+                                        Acconsento al trattamento dei dati per ricevere una risposta alla mia richiesta.
+                                    </label>
+                                </div>
 
-                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-                                <span id="form-status" class="text-muted small">I messaggi vengono inviati direttamente via email.</span>
-                                <button type="submit" id="submit-btn" class="btn btn-brown px-4 py-3 rounded-pill shadow-sm">
-                                    Invia il messaggio <i class="fas fa-arrow-right ms-2"></i>
-                                </button>
-                            </div>
-                        </form>
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                                    <span id="form-status" class="text-muted small">I messaggi vengono inviati direttamente via email.</span>
+                                    <button type="submit" id="submit-btn" class="btn btn-brown px-4 py-3 rounded-pill shadow-sm">
+                                        Invia il messaggio <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-5 bg-terracotta-soft text-dark-custom">
-        <div class="container py-2">
-            <div class="row align-items-center justify-content-between g-3">
-                <div class="col-lg-8">
-                    <h4 class="font-serif fw-bold mb-0">Ogni buon progetto comincia da una domanda ben formulata.</h4>
-                </div>
-                <div class="col-lg-auto">
-                    <span class="small text-muted d-flex align-items-center gap-2">
-                        <i class="fas fa-check-circle text-accent"></i> Risposta personale, non automatica
-                    </span>
+        <section class="py-5 bg-terracotta-soft text-dark-custom">
+            <div class="container py-2">
+                <div class="row align-items-center justify-content-between g-3">
+                    <div class="col-lg-8">
+                        <h2 class="h4 font-serif fw-bold mb-0">Ogni buon progetto comincia da una domanda ben formulata.</h2>
+                    </div>
+                    <div class="col-lg-auto">
+                        <span class="small text-muted d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-accent"></i> Risposta personale, non automatica
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="site-footer bg-dark-brown text-white py-5">
         <div class="container">
             <div class="row gy-4 align-items-center">
                 <div class="col-lg-6">
-                    <h5 class="font-serif fw-bold mb-2 footer-brand-title">Valentina Russo</h5>
+                    <p class="font-serif fw-bold mb-2 footer-brand-title">Valentina Russo</p>
                     <p class="text-light-muted mb-0">Strategia chiara, esecuzione curata, risultati che durano nel tempo.</p>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mb-0 footer-nav">
                         <li class="list-inline-item"><a href="index.html">Home</a></li>
-                        <li class="list-inline-item"><a href="portfolio/index.html">Portfolio</a></li>
-                        <li class="list-inline-item"><a href="about/index.html">About</a></li>
-                        <li class="list-inline-item"><a href="contacts.html">Contact</a></li>
+                        <li class="list-inline-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="list-inline-item"><a href="about.html">Chi sono</a></li>
+                        <li class="list-inline-item"><a href="cv.html">CV</a></li>
+                        <li class="list-inline-item"><a href="contacts.html">Contatti</a></li>
                     </ul>
                 </div>
             </div>
@@ -260,7 +266,7 @@
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = 'Invia il messaggio <i class="fas fa-arrow-right ms-2"></i>';
                     document.getElementById('contact-form').reset();
-                }, function(error) {
+                }, function() {
                     formStatus.textContent = 'Errore durante l\'invio. Riprova più tardi o scrivi direttamente via email.';
                     formStatus.className = 'text-danger small fw-medium';
                     submitBtn.disabled = false;

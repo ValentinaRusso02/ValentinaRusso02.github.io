@@ -23,15 +23,15 @@ body {
 }
 
 .bg-cream {
-    background-color: $bg-cream !important;
+    background-color: $bg-cream;
 }
 
 .bg-dark-brown {
-    background-color: $dark-brown !important;
+    background-color: $text-brown;
 }
 
 .bg-terracotta-soft {
-    background-color: $terracotta-soft !important;
+    background-color: $terracotta-soft;
 }
 
 .text-light-muted {
@@ -40,6 +40,10 @@ body {
 
 .section-padding {
     padding: 80px 0;
+
+    @media (max-width: 767.98px) {
+        padding: 48px 0;
+    }
 }
 
 .eyebrow-text {
