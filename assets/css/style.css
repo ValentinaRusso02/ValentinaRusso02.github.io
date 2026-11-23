@@ -65,6 +65,16 @@ body {
   background-color: #a45f4f;
 }
 
+a[x-apple-data-detectors],
+a[x-apple-data-detectors=true] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
 .custom-navbar {
   background-color: rgba(245, 241, 234, 0.95);
   backdrop-filter: blur(10px);
@@ -342,22 +352,27 @@ body {
 .site-footer .footer-nav {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 1.25rem;
 }
 .site-footer .footer-nav .list-inline-item {
-  display: inline-block;
+  margin: 0;
 }
 .site-footer .footer-nav a {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
   font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 .site-footer .footer-nav a:hover {
   color: #e8d4cc;
 }
 @media (max-width: 991.98px) {
-  .site-footer .footer-nav .list-inline-item:first-child a {
-    margin-left: 0;
+  .site-footer .footer-nav {
+    justify-content: flex-start;
+    gap: 0.5rem 1rem;
   }
 }
 .site-footer .footer-brand-title {
@@ -369,4 +384,11 @@ body {
 
 .info-card {
   min-height: 100%;
+}
+
+.cv-body .badge,
+.cv-body .badge a,
+.cv-body a[x-apple-data-detectors] {
+  color: #473a32 !important;
+  text-decoration: none !important;
 }/*# sourceMappingURL=style.css.map */

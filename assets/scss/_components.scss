@@ -258,26 +258,29 @@
     .footer-nav {
         list-style: none;
         padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.5rem 1.25rem;
 
         .list-inline-item {
-            display: inline-block;
+            margin: 0;
         }
 
         a {
             color: white;
             text-decoration: none;
-            margin-left: 20px;
             font-size: 0.95rem;
+            transition: color 0.3s ease;
 
             &:hover {
                 color: $terracotta-soft;
             }
         }
 
-        .list-inline-item:first-child a {
-            @media (max-width: 991.98px) {
-                margin-left: 0;
-            }
+        @media (max-width: 991.98px) {
+            justify-content: flex-start;
+            gap: 0.5rem 1rem;
         }
     }
 
@@ -292,4 +295,13 @@
 
 .info-card {
     min-height: 100%;
+}
+
+.cv-body {
+    .badge,
+    .badge a,
+    a[x-apple-data-detectors] {
+        color: $text-brown !important;
+        text-decoration: none !important;
+    }
 }
