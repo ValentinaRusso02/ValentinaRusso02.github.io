@@ -48,26 +48,26 @@
 .hero-portrait-wrapper {
     position: relative;
     display: inline-block;
+    width: 100%;
+    max-width: 404px;
     padding: 12px;
     background-color: $bg-cream;
     border: 1px solid $border-color;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-    max-width: 100%;
 
     @media (max-width: 575.98px) {
+        max-width: 296px;
         padding: 8px;
     }
 
     .portrait-crop-box {
         width: 100%;
-        max-width: 380px;
         height: 480px;
         overflow: hidden;
         border-radius: 4px;
 
         @media (max-width: 575.98px) {
-            max-width: 280px;
             height: 320px;
         }
 
